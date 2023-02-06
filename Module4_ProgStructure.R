@@ -11,5 +11,11 @@ boxplot(df$Freq ~ finaldecision,
         xlab="Blood Pressure",
         ylab="Frequency",
         names=c("low","high"))
+boxplot(df$bloodp ~ finaldecision,
+        main="Measured blood pressure relation to assessments",
+        xlab="Assessment",
+        ylab="Blood Pressure",
+        names=c("low","high"))
 hist(df$bloodp,
      xlab="Blood Pressure")
+mean(df$finaldecision)
