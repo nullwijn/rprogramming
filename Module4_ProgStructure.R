@@ -6,12 +6,12 @@ finaldecision <- c(0,1,0,1,0,1,0,1,1,1)
 
 df <- data.frame(Freq,bloodp,first,second,finaldecision)
 
-boxplot(df$Freq ~ finaldecision,
+boxplot(df$Freq ~ df$finaldecision,
         main="Hospital visits relation to blood pressure assessments",
         xlab="Blood Pressure",
         ylab="Frequency",
         names=c("low","high"))
-boxplot(df$bloodp ~ finaldecision,
+boxplot(df$bloodp ~ df$finaldecision,
         main="Measured blood pressure relation to assessments",
         xlab="Assessment",
         ylab="Blood Pressure",
