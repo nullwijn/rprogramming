@@ -19,5 +19,6 @@ setClass("tree",
            circumference="numeric"
          ))
 tree1 <- new("tree",type="Orange",age=Orange$age[1],circumference=Orange$circumference[1])
+isS4(tree1)
 tree1
 #S4 works on Orange
