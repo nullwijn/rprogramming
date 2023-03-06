@@ -10,8 +10,8 @@ StudentAverage = ddply(myTable,"Sex",summarize,Grade.Average=mean(Grade))
 #Using summarize instead of transform makes it a simple 1x2 table instead of a clone of the first table with the average
 #tacked on to each student.
 
-write.table(StudentAverage, "Students_Gendered_Mean")
+write.table(StudentAverage, "Students_Gendered_Mean.tsv")
 
 i_students <- subset(as.data.frame(myTable), grepl("i", Name, ignore.case=T))
 
-write.csv(i_students, "I_Students")
+write.csv(i_students, "I_Students.csv")
