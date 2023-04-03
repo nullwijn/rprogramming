@@ -1,0 +1,41 @@
+---
+title: "Markdown Intro"
+author: "Tristan Wijnmaalen"
+date: "2023-04-03"
+output: html_document
+---
+*Hello World!*
+
+**Hello World!**
+
+# Hello World!
+
+## Hello World!
+
+### Hello World!
+
+## R Markdown
+
+```{r HelloCars}
+print("Hello, World!")
+summary(cars)
+max(cars$speed)
+```
+
+## Including Plots, Iris under a new lens
+
+
+```{r iris}
+plot(iris)
+```
+
+Sorr
+---
+y, you see
+---
+m to be b
+---
+reaking u
+---
+p
+---
